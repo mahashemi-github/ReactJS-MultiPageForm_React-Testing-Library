@@ -1,0 +1,19 @@
+{
+  "followerss": [
+    {
+      "id": 1,
+      "name": "Shai",
+      "image": "1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nina",
+      "image": "2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Raya",
+      "image": "3.jpg"
+    }
+  ]
+}

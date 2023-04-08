@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary: #bc4123;
+  --tertiary: rgb(255, 237, 180);
+  --text: #2c2c2c;
+  --one: #e6e6e6;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: "Poppins";
+  color: var(--text);
+  width:inherit;
+}
+
+* {
+  color: var(--text);
+  margin: 0;
+}
+
+button, .subscriptionbtn {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text);
+  border: 2px solid var(--text);
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.subscriptionbtn {
+  background-color: var(--tertiary);
+}
+
+button:hover, .subscriptionbtn:hover {
+  border-color: var(--primary);
+}
+
+button:active, .subscriptionbtn:active  {
+  background: var(--primary);
+}
+
+header {
+  display: flex;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h2 {
+  margin-right: auto;
+  font-size: 30px;
+  font-family: cursive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.footer {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-form h3 {
+  text-align: center;
+  font-family: cursive;
+  margin-bottom: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+/* .todo h2 {
+  font-family: cursive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+} */
+
+form input {
+  display: block;
+  font-family: "Poppins";
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  width: 350px;
+}
+
+.skills {
+  width: 100%;
+  display: block;
+  font-family: "Poppins";
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: inline-block;
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin:0;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+}
+
+.subscribe-btn {
+  margin-top: 10px;
+  font-family: "Poppins";
+}
+
+.errorinput {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid crimson;
+  color: crimson;
+}
+
+.instructions {
+  font-size: 14px;
+  border-radius: 6px;
+  outline-style: solid;
+  outline-color: #7d7c7c;
+  outline-width: 4px;
+  border: 2px dashed var(--tertiary);
+  background-color: #7d7c7c;
+  color: var(--tertiary);
+  padding: 6px;
+  width: fit-content;
+  margin-bottom: 4px;
+}
+
+.instructions span {
+  color: var(--tertiary);
+}
+
+.hideIns {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  color: limegreen;
+  font-size: 14px;
+  margin-top: -4px;
+  margin-bottom: 6px;
+}
+
+.show span {
+  color: limegreen;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* Todo and Followers Page */
+.todo-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 100px;
+}
+
+/* .todos-page nav {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display: inline-block;
+  align-items: center;
+} */
+
+.todos-page #followers-btn {
+  padding: 8px 150px;
+  margin-top: 100px;
+  font-size: 16px;
+  color: var(--text);
+  cursor: pointer;
+  background-color: var(--tertiary);
+  text-decoration: none;
+  border: 2px solid var(--text);
+  border-radius: 4px;
+}
+
+.todos-page #followers-btn:hover{
+  border-color: var(--primary);
+}
+
+.todos-page #followers-btn.activee {
+  background: var(--primary);
+  box-shadow: 0px 5px 5px 3px rgba(0,0,0,0.4);
+}
+
+.followers-content {
+  margin-left: 10px;
+  width: 350px;
+}
+
+.todo-form form {
+  margin-top: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: rgba(0,0,0,0.2);
+  width: 600px;
+  margin-top: 20px;
+}
+
+table thead {
+  background: var(--primary);
+  background: rgba(0,0,0,0.2);
+}
+
+.todo-details {
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.todo-details td, th {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid var(--text);
+}
+
+.todo-details span:last-child {
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--text);
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.todo-details span:last-child:hover {
+  border-color: var(--primary);
+}
+
+.todo-details span:last-child:active  {
+  background: var(--primary);
+}
+
+.number-of-tasks {
+  margin-top: 20px;
+  float: left;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.followers-content, .followers-items {
+  margin-top: 20px;
+}
+
+.followers-content, .followers-items {
+  margin-top: 20px;
+}
+
+.followers-items img {
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  vertical-align:middle;
+}
+
+.todo-item-done {
+  text-decoration: line-through;
+  color: crimson;
+}
+
+.not-found {
+  font-size: 16px;
+  margin: 40px;
+}
